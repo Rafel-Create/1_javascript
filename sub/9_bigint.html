@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BigInt</title>
+</head>
+<body>
+     <div class="navbar navbar-expand-sm bg-light">
+        <div class="container-fluid">
+            <ul class="navbar-nav">
+                <li class="nav-item"><a href="sub/1_intro.html" class="nav-link">intro</a></li>
+                <li class="nav-item"><a href="sub/2_date.html" class="nav-link">date</a></li>
+                <li class="nav-item"><a href="sub/3_object.html" class="nav-link">object</a></li>
+                <li class="nav-item"><a href="sub/4_constructor.html" class="nav-link">constructor</a></li>
+                <li class="nav-item"><a href="sub/5_ifelse.html" class="nav-link">ifelse</a></li>
+                <li class="nav-item"><a href="sub/6_event.html" class="nav-link">event</a></li>
+                <li class="nav-item"><a href="sub/7_iterator.html" class="nav-link">iterator</a></li>
+                <li class="nav-item"><a href="sub/8_operators.html" class="nav-link">operators</a></li>
+                <li class="nav-item"><a href="sub/9_bigint.html" class="nav-link">bigint</a></li>
+                <li class="nav-item"><a href="sub/10_json.html" class="nav-link">json</a></li>
+                <li class="nav-item"><a href="sub/11_class.html" class="nav-link">class</a></li>
+            </ul>
+        </div>
+    </div>
+<h1>BigInt</h1>
+<pre>
+- javascript로 표현하기에는 너무 큰 정수값을 저장하는데 사용한다. 
+- 모든 숫자가 64비트 부동 소수점 형식(IEE 754표준)으로 저장됩니다.
+이 때문에 javascript는 정수만 안전하게 표현할 수 있습니다. 
+9007199254740991 +(2 53 -1)부터 -9007199254740991 -(2 53 -1)까지만 안전하게 정수를 사용할 수 있다. 
+이 범위를 벗어나면 정수값은 정밀도가 떨어지게 됩니다. 
+- bigInt는 사용해봐야 확인할 수 있습니다. 
+- 열다섯 자리 이상의 숫자가 나온다 --> 빅인트를 붙여줘라.
+- BinInt는 소수 float가 있을 수 없다.(소수점이 있을 수 없다.)
+- 16진법, 8진법, 2진법으로 작성할 수 있다.
+</pre>
+<p id="nums"></p>
+<h1>16진수, 8진수, 2진수</h1>
+<p id="hex"></p>
+
+<script src="js/big.js">
+</script>
+</body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <title>2_날짜</title>
+</head>
+<body>
+     <div class="navbar navbar-expand-sm bg-light">
+        <div class="container-fluid">
+            <ul class="navbar-nav">
+                <li class="nav-item"><a href="sub/1_intro.html" class="nav-link">intro</a></li>
+                <li class="nav-item"><a href="sub/2_date.html" class="nav-link">date</a></li>
+                <li class="nav-item"><a href="sub/3_object.html" class="nav-link">object</a></li>
+                <li class="nav-item"><a href="sub/4_constructor.html" class="nav-link">constructor</a></li>
+                <li class="nav-item"><a href="sub/5_ifelse.html" class="nav-link">ifelse</a></li>
+                <li class="nav-item"><a href="sub/6_event.html" class="nav-link">event</a></li>
+                <li class="nav-item"><a href="sub/7_iterator.html" class="nav-link">iterator</a></li>
+                <li class="nav-item"><a href="sub/8_operators.html" class="nav-link">operators</a></li>
+                <li class="nav-item"><a href="sub/9_bigint.html" class="nav-link">bigint</a></li>
+                <li class="nav-item"><a href="sub/10_json.html" class="nav-link">json</a></li>
+                <li class="nav-item"><a href="sub/11_class.html" class="nav-link">class</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+<Pre>
+시간에 관련되어 있는 3가지 종류
+- ISO Date : 국제표준시 international standard  "2025-05-12" 개발할 때 디폴트 표시값이 ISO다. [YYYY-MM-DDTHH:MM:SSZ]
+- Short Date : 짧은 날짜    "05/12/2025"
+- Long DAte : May 12 2025      달을 영어로 쓴다
+</Pre>
+
+                <h1 class="my-3">간단한 시간 나오게 하기</h1> <!-- 16px*3 -->
+                <botton 
+                class="btn btn-outline-warning"
+                onclick="document.getElementById('time').innerHTML = Date()"
+                >
+                누르면 시간이 나와요
+                <!--도큐먼트에서 time 이라는 아이디를 찾아서 거기에 데이트(날짜)객체를 넣어달라는 의미-->
+                </botton>
+                <p id="time"></p>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

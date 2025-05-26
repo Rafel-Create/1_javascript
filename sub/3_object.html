@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+     <div class="navbar navbar-expand-sm bg-light">
+        <div class="container-fluid">
+            <ul class="navbar-nav">
+                <li class="nav-item"><a href="sub/1_intro.html" class="nav-link">intro</a></li>
+                <li class="nav-item"><a href="sub/2_date.html" class="nav-link">date</a></li>
+                <li class="nav-item"><a href="sub/3_object.html" class="nav-link">object</a></li>
+                <li class="nav-item"><a href="sub/4_constructor.html" class="nav-link">constructor</a></li>
+                <li class="nav-item"><a href="sub/5_ifelse.html" class="nav-link">ifelse</a></li>
+                <li class="nav-item"><a href="sub/6_event.html" class="nav-link">event</a></li>
+                <li class="nav-item"><a href="sub/7_iterator.html" class="nav-link">iterator</a></li>
+                <li class="nav-item"><a href="sub/8_operators.html" class="nav-link">operators</a></li>
+                <li class="nav-item"><a href="sub/9_bigint.html" class="nav-link">bigint</a></li>
+                <li class="nav-item"><a href="sub/10_json.html" class="nav-link">json</a></li>
+                <li class="nav-item"><a href="sub/11_class.html" class="nav-link">class</a></li>
+            </ul>
+        </div>
+    </div>
+<h1>class와 object</h1>
+<p><mark id="phoneFind"></mark></p>
+<p><mark id="sam"></mark></p>
+<p id="carFind"></p>
+<script>
+const apple = {type:"iphone", model:"16ProMAX", color:"블랙 티타늄"}
+document.getElementById("phoneFind").innerHTML = 
+" 이 전화기는 " + apple.type + "이고 모델은 " + apple.model + " 이고 색상은 " + apple.color + "입니다."
+//innerHTML  ()이 아이디를 찾아서 HTML 안에 집어 넣어라.
+const 갤럭시 = {type:"sam", model:"갤럭시 15", color:"블랙"}
+document.getElementById("sam").innerHTML =
+"내 스마트폰은 " + 갤럭시.type + "이고 모델은 " + 갤럭시.model + " 이고 색상은 " + 갤럭시.color + "입니다."
+
+//객체만들기 const: 상수   car: 상수명('커맨드'로 흔히 부름)
+const car = {type:"mercedes", model:"cls450", clolr:"white"};  //이 줄에 있는 건 전부다 속성이다.
+
+document.getElementById("carFind").innerHTML = "내 차는 " + car.type + " " + car.model + " 이며 색상은 " + car.color + "입니다."
+</script>
+
+<pre>
+-class는 객체를 만들기 위한 템플릿(객체에 대한 금형)이다.
+-객체는 사물(object)
+-car(object)는 properties(속성) 와 method를 갖는다.
+-프로퍼티 예시 properties[car.name = x6, car.weight = 1t] 
+-메써드 예시 method[car.start(), car.brake()]
+-데이터가 많을수록 객체지향으로 프로그래밍 하면 사용이 편리하다.
+</pre>
+</body>
+</html>
